@@ -27,6 +27,7 @@ API 키·유료 API·외부 서버를 쓰지 않습니다. (모든 작업은 Pro
 | `logs/work-log.md` | 호출 시작/종료, 재검토, 승인 요청 업무기록 |
 | `knowledge/` | 공식 출처 목록, 확인된 법령 메모 |
 | `templates/` | 사건정보·검수·종합보고서 양식 |
+| `tools/build_dashboard.py` → `dashboard/index.html` | 브라우저 진행 현황 대시보드 (`--watch` 로 실시간 갱신) |
 
 ## 테스트 방법
 

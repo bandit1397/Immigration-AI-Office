@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="5">
+<title>AI 사무실 현황</title>
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1d1d1b;--mute:#6b6a65;--line:#e4e2dc;--boss:#2f5d8a;--staff:#2e7d5b;--chief:#9a5b13;--hand:#6a4c93;--ok:#2e7d5b;--wait:#9a5b13;--bad:#b3261e}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--card:#211f1d;--ink:#ecebe6;--mute:#a19f98;--line:#35332f;--boss:#7fb0e0;--staff:#6cc79e;--chief:#e0a560;--hand:#b79be0;--ok:#6cc79e;--wait:#e0a560;--bad:#f08a80}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif}
+header{padding:24px 16px 8px;max-width:1100px;margin:auto}h1{margin:0;font-size:22px}header p{margin:4px 0 0;color:var(--mute);font-size:13px}
+main{max-width:1100px;margin:auto;padding:8px 16px 40px;display:grid;grid-template-columns:1.1fr 1fr;gap:16px}
+@media (max-width:820px){main{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:16px}
+.row{display:flex;justify-content:space-between;align-items:center}h2{margin:0;font-size:18px}h3{margin:0 0 10px;font-size:15px}
+.sub{color:var(--mute);margin:4px 0 12px;font-size:13px}
+.badge{font-size:12px;padding:2px 10px;border-radius:99px;border:1px solid currentColor}.ok{color:var(--ok)}.wait{color:var(--wait)}.bad{color:var(--bad)}
+.pipe{list-style:none;padding:0;margin:0 0 14px;display:flex;flex-wrap:wrap;gap:4px}
+.pipe li{font-size:12px;color:var(--mute);display:flex;align-items:center;gap:5px;padding:3px 8px;border:1px solid var(--line);border-radius:6px}
+.pipe li span{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.pipe li.on{color:var(--ink);border-color:var(--staff)}.pipe li.on span{background:var(--staff)}.pipe li.skip{opacity:.45;text-decoration:line-through}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}
+.stats div{border:1px solid var(--line);border-radius:8px;padding:8px;text-align:center}.stats b{display:block;font-size:17px}.stats small{color:var(--mute)}
+.files a{font-size:12px;margin-right:8px;color:var(--boss)}.last{font-size:12px;color:var(--mute);margin:6px 0 0}
+.org{display:grid;gap:8px}.org div{border-left:4px solid;padding:6px 10px;border-radius:4px;background:color-mix(in srgb,var(--card) 92%,var(--ink))}
+.org .c{border-color:var(--chief)}.org .b{border-color:var(--boss)}.org .s{border-color:var(--staff)}.org small{color:var(--mute);display:block}
+ul.tl{list-style:none;margin:0;padding:0}ul.tl li{display:grid;grid-template-columns:70px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+ul.tl time{font-variant-numeric:tabular-nums;font-size:13px}ul.tl time small{color:var(--mute)}ul.tl p{margin:2px 0 0;font-size:13px;color:var(--mute);overflow-wrap:anywhere}
+.who{font-weight:600;font-size:13px}.boss .who{color:var(--boss)}.staff .who{color:var(--staff)}.chief .who{color:var(--chief)}.handoff .who{color:var(--hand)}
+.stage{font-size:11px;border:1px solid var(--line);border-radius:4px;padding:0 6px;margin-left:4px}.case{font-size:11px;color:var(--mute);margin-left:6px}
+.kn li{font-size:13px}.kn a{color:var(--boss)}
+</style></head><body>
+<header><h1>Immigration AI Office — 진행 현황</h1>
+<p>갱신 2026-11-26 13:31:46 · 5초마다 자동 새로고침 · 사건 1건 · 직원 호출 누계 2회 · 가상 고객 테스트</p></header>
+<main>
+<div>
+  <section class="card"><h3>조직</h3><div class="org">
+    <div class="c"><b>대표 행정사</b><small>최종 승인 (사람)</small></div>
+    <div class="b"><b>AI 사무장</b><small>메인 Claude Code · 접수·배정·검수·재검토·승인 요청</small></div>
+    <div class="s"><b>immigration-specialist</b><small>Subagent · Skills: visa-review · legal-research · document-prep · case-report</small></div>
+  </div></section>
+  
+<section class="card">
+  <div class="row"><h2>TEST-001</h2><span class="badge ok">승인</span></div>
+  <p class="sub">가상고객 A · E-7-1 → F-2-7 · 체류자격 변경 상담 (E-7-1 → F-2-7)</p>
+  <ol class="pipe"><li class="on"><span></span>접수</li><li class="on"><span></span>직원 배정</li><li class="on"><span></span>직원 보고</li><li class="on"><span></span>사무장 검수</li><li class="on"><span></span>재검토</li><li class="on"><span></span>종합보고</li><li class="on"><span></span>승인 요청</li><li class="on"><span></span>승인</li></ol>
+  <div class="stats">
+    <div><b>2</b><small>직원 호출</small></div>
+    <div><b>1</b><small>재검토</small></div>
+    <div><b>가능성 보통</b><small>종합 판단</small></div>
+  </div>
+  <p class="files"><a href="../cases/TEST-001/case-info.md">case-info.md</a> <a href="../cases/TEST-001/final-report.md">final-report.md</a> <a href="../cases/TEST-001/report-v1.md">report-v1.md</a> <a href="../cases/TEST-001/report-v2.md">report-v2.md</a> <a href="../cases/TEST-001/review-v1.md">review-v1.md</a> <a href="../cases/TEST-001/review-v2.md">review-v2.md</a></p>
+  <p class="last">최근: 2026-11-26 13:31:30 · 사무장 · 승인에 따라 knowledge 4건 저장 (F-2-7, F-2-R, 별표1의2, Top-Tier)</p>
+</section>
+  <section class="card kn"><h3>확인된 지식 (knowledge)</h3><ul><li><a href="../knowledge/F-2-7.md">F-2-7.md</a></li><li><a href="../knowledge/F-2-R.md">F-2-R.md</a></li><li><a href="../knowledge/Top-Tier.md">Top-Tier.md</a></li><li><a href="../knowledge/sources.md">sources.md</a></li><li><a href="../knowledge/출입국관리법-시행령-별표1의2.md">출입국관리법-시행령-별표1의2.md</a></li></ul></section>
+</div>
+<section class="card"><h3>업무기록 (최신순)</h3><ul class="tl"><li class="boss"><time>13:31:30<br><small>2026-11-26</small></time><div><span class="who">사무장</span> <span class="stage">종합보고</span><span class="case">TEST-001</span><p>승인에 따라 knowledge 4건 저장 (F-2-7, F-2-R, 별표1의2, Top-Tier)</p></div></li><li class="chief"><time>13:30:14<br><small>2026-11-26</small></time><div><span class="who">대표 행정사</span> <span class="stage">승인</span><span class="case">TEST-001</span><p>종합보고서 승인, knowledge 저장 지시</p></div></li><li class="boss"><time>12:53:36<br><small>2026-11-26</small></time><div><span class="who">사무장</span> <span class="stage">승인 요청</span><span class="case">TEST-001</span><p>대표 행정사에게 승인 요청</p></div></li><li class="boss"><time>12:53:36<br><small>2026-11-26</small></time><div><span class="who">사무장</span> <span class="stage">종합보고</span><span class="case">TEST-001</span><p>final-report.md 작성</p></div></li><li class="boss"><time>12:53:36<br><small>2026-11-26</small></time><div><span class="who">사무장</span> <span class="stage">검수</span><span class="case">TEST-001</span><p>review-v2: 통과(검산 이상 없음, 지적 7건 모두 반영)</p></div></li><li class="staff"><time>12:53:36<br><small>2026-11-26</small></time><div><span class="who">immigration-specialist</span> <span class="stage">호출 종료</span><span class="case">TEST-001</span><p>report-v2 제출(텍스트 회신, 사무장 저장). 가능성 보통, 93~110점/80점, 확인 필요 18건</p></div></li><li class="handoff"><time>12:42:54<br><small>2026-11-26</small></time><div><span class="who">사무장→immigration-specialist</span> <span class="stage">호출 시작</span><span class="case">TEST-001</span><p>report-v2 작성 지시 (review-v1 반영)</p></div></li><li class="boss"><time>12:42:54<br><small>2026-11-26</small></time><div><span class="who">사무장</span> <span class="stage">재검토 요청</span><span class="case">TEST-001</span><p>고시 원문 배점 확인·점수 재산정, 상태표시·표현·F-2-R 5년 요건 보완</p></div></li><li class="boss"><time>12:42:54<br><small>2026-11-26</small></time><div><span class="who">사무장</span> <span class="stage">검수</span><span class="case">TEST-001</span><p>review-v1 작성: 재검토 필요(지적 7건). 사무장 직접 확인: 현행 고시 제2025-408호(law.go.kr)</p></div></li><li class="staff"><time>12:42:17<br><small>2026-11-26</small></time><div><span class="who">immigration-specialist</span> <span class="stage">호출 종료</span><span class="case">TEST-001</span><p>report-v1 제출(텍스트 회신, 하네스가 서브에이전트 쓰기 차단 → 사무장이 저장). 판단 불가, 확인 필요 17건, 추가정보 12건</p></div></li><li class="handoff"><time>12:36:10<br><small>2026-11-26</small></time><div><span class="who">사무장→immigration-specialist</span> <span class="stage">호출 시작</span><span class="case">TEST-001</span><p>report-v1.md 작성 지시</p></div></li><li class="boss"><time>12:36:10<br><small>2026-11-26</small></time><div><span class="who">사무장</span> <span class="stage">접수</span><span class="case">TEST-001</span><p>case-info.md 확인, 사건번호 TEST-001 확정 (가상 고객정보)</p></div></li></ul></section>
+</main></body></html>
