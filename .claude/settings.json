@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(./**)",
+      "Edit(./cases/**)",
+      "Edit(./logs/**)",
+      "WebSearch",
+      "WebFetch(domain:law.go.kr)",
+      "WebFetch(domain:www.law.go.kr)",
+      "WebFetch(domain:hikorea.go.kr)",
+      "WebFetch(domain:www.hikorea.go.kr)",
+      "WebFetch(domain:immigration.go.kr)",
+      "WebFetch(domain:www.immigration.go.kr)",
+      "WebFetch(domain:moj.go.kr)",
+      "WebFetch(domain:www.moj.go.kr)",
+      "Bash(date:*)"
+    ],
+    "deny": [
+      "mcp__claude_ai_Gmail__send_message",
+      "mcp__claude_ai_Gmail__reply",
+      "mcp__claude_ai_Gmail__forward"
+    ]
+  }
+}
