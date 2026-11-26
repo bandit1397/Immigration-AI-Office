@@ -9,6 +9,7 @@
 | 정책 | 법무부 출입국·외국인정책본부 | https://www.immigration.go.kr | 보도자료, 제도 변경 공지 |
 | 정책 | 법무부 | https://www.moj.go.kr | 고시·공고 |
 | 사회통합 | 사회통합정보망 | https://www.socinet.go.kr | 사회통합프로그램 |
+| 고용 | 고용노동부 | https://www.moel.go.kr | E-7-4 중앙부처(제조업) 추천 공지, 고용허가 관련 (2026-11-26 추가, TEST-002) |
 
 ## 주의
 
